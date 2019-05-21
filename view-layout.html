@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SMv Augmented Reality tools</title>
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+	</head>
+	
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+	<body style='margin : 0px; overflow: hidden;'>
+		<div id="back-btn">
+			<input class="return" onClick="window.location.href = 'https://kait909.wixsite.com/infosys220'" value="Return to menu" type="button">
+		</div>
+		<style>
+			input {
+				width: 12.5rem;
+				height: 3rem;
+				background-color: #4682B4;
+				margin: auto;
+				padding-top: 0;
+				color: #FFFFFF;
+				font-size: 1.5rem;
+				font-family: 'EB Garamond', serif;
+				border: none;
+				float:none;
+				
+			}
+			#back-btn {
+				text-align: center;
+			}
+		</style>
+		<a-scene embedded="" arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false">
+			<a-marker-camera preset='hiro'>
+				<a-box color='#FDC501' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 0.25' material='opacity: 0.5;'></a-box>
+				<a-box color='#05BCA9' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#DD497E' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#2DAE45' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 0.25' material='opacity:0.5;'></a-box>
+			</a-marker-camera>
+		</a-scene>
+	</body>
+</html>
