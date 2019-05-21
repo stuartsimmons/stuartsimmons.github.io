@@ -26,12 +26,21 @@
 				text-align: center;
 			}
 		</style>
-		<a-scene embedded arjs='sourceType: webcam;'>
-			<a-box color='#FDC501' width='0.5' height='0.5' depth='0.5' position='0.25 0.25 0.25' material='opacity: 0.5;'></a-box>
-			<a-box color='#05BCA9' width='0.5' height='0.5' depth='0.5' position='-0.25 0.25 -0.25' material='opacity:0.5;'></a-box>
-			<a-box color='#DD497E' width='0.5' height='0.5' depth='0.5' position='0.25 0.25 -0.25' material='opacity:0.5;'></a-box>
-			<a-box color='#CCCCCC' width='0.5' height='0.5' depth='0.5' position='-0.25 0.25 0.25' material='opacity:0.5;'></a-box>
-			<a-marker-camera preset='hiro'></a-marker-camera>
+		<!--a-scene embedded arjs='sourceType: webcam;'-->
+		<a-scene embedded="" arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="">
+			<a-marker preset="hiro" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
+				<a-box color='#FDC501' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 0.25' material='opacity: 0.5;'></a-box>
+				<a-box color='#05BCA9' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#DD497E' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#2DAE45' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 0.25' material='opacity:0.5;'></a-box>
+			</a-marker>
+			<a-marker preset="kanji" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
+				<a-box color='#FFFFFF' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 0.25' material='opacity: 0.5;'></a-box>
+				<a-box color='#AAAAAA' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#555555' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#000000' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 0.25' material='opacity:0.5;'></a-box>
+			</a-marker>
+			<a-entity camera="" position="" rotation="" scale="" visible=""></a-entity>
 		</a-scene>
 	</body>
 </html>
