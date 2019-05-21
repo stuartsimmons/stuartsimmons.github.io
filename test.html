@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SMv Augmented Reality tools</title>
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 	</head>
 	
 	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
@@ -13,26 +14,27 @@
 		</div>
 		<style>
 			input {
-				width: 102vw;
+				width: 12.5vw;
 				height: 3rem;
-				background-color: #333333;
+				background-color: #4682B4;
 				margin: auto;
 				padding-top: 0;
-				color: #CCCCCC;
+				color: #FFFFFF;
 				font-size: 1.5rem;
+				font-family: 'EB Garamond', serif;
+				border: none;
 				
 			}
 			#back-btn {
 				text-align: center;
 			}
 		</style>
-		<!--a-scene embedded arjs='sourceType: webcam;'-->
-		<a-scene embedded="" arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="">
+		<a-scene embedded="" arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false">
 			<a-marker preset="hiro" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
-				<a-box color='#FDC501' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 0.25' material='opacity: 0.5;'></a-box>
-				<a-box color='#05BCA9' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 -0.25' material='opacity:0.5;'></a-box>
-				<a-box color='#DD497E' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 -0.25' material='opacity:0.5;'></a-box>
-				<a-box color='#2DAE45' width='0.5' height='0.5' depth='0.5' position='-0.125 0.25 0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#FDC501' width='0.5' height='0.5' depth='0.5' position='0.375 0.5 0.25' material='opacity: 0.5;'></a-box>
+				<a-box color='#05BCA9' width='0.5' height='0.5' depth='0.5' position='-0.125 0.5 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#DD497E' width='0.5' height='0.5' depth='0.5' position='0.375 0.55 -0.25' material='opacity:0.5;'></a-box>
+				<a-box color='#2DAE45' width='0.5' height='0.5' depth='0.5' position='-0.125 0.55 0.25' material='opacity:0.5;'></a-box>
 			</a-marker>
 			<a-marker preset="kanji" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
 				<a-box color='#FFFFFF' width='0.5' height='0.5' depth='0.5' position='0.375 0.25 0.25' material='opacity: 0.5;'></a-box>
