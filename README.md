@@ -1,6 +1,7 @@
 <head>
 		<link rel="icon" type="image/png" href="assets/logo.png">
 </head>
+
 # stuartsimmons.github.io
 
 AR.js for [SMv](https://kait909.wixsite.com/infosys220) as part of Group 43's group project for INFOSYS220 at the University of Auckland during semester 1 of 2019.
